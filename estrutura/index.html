@@ -55,6 +55,31 @@
         height: 8em;
         animation: orbit 2.7s linear infinite;
     }
+    .earth::before,
+    .moon::before {
+        content:'';
+        position: absolute;
+        border-radius: 5%;
+    }
+    .earth::before{
+        top:2.8em;
+        right:2.8;
+        width: 3em;
+        height: 3em;
+        background-color: aqua;
+    }
+    .moon::before{
+        top: 0.8em;
+        right: 0.2em;
+        width: 1.2em;
+        height: 1.2em;
+        background-color: silver;
+    }
+    @keyframes orbit{
+        to{
+            transform: rotate(360deg);
+        }
+    }
 
 </style>
 <body>
